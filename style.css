@@ -7,6 +7,13 @@ body {
   min-height: 100vh;
   overflow: hidden;
   font-family: Arial, sans-serif;
+  
+h1,
+h2,
+button,
+.center-text,
+select {
+  font-family: 'Cinzel', serif;
   color: white;
   display: flex;
   justify-content: center;
