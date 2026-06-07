@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Creature</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="cinematic-bg">
+    <div class="fog fog1"></div>
+    <div class="fog fog2"></div>
+    <div class="magic-light"></div>
+    <div class="particles"></div>
+    <div class="vignette"></div>
+</div>
+  <div class="bg"></div>
+
+  <div class="app">
+  <h1>CREATE A Hybrid Creature</h1>
+
+    <p>The wheel decides their fate</p>
+
+    <select id="category">
+         <option value="head">Head</option>
+         <option value="body">Body</option>
+        <option value="weapon">Weapon</option>
+        <option value="power">Power</option>
+    </select>
+
+    <div class="wheel-wrap">
+      <div class="pointer"></div>
+      <div class="wheel" id="wheel"></div>
+      <div class="center-text" id="centerText">?</div>
+    </div>
+
+    <button onclick="spin()">SPIN</button>
+
+    <h2 id="result">Press Spin</h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
