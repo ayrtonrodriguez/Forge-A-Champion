@@ -69,3 +69,15 @@ document.addEventListener("DOMContentLoaded", () => {
     spin();
   });
 });
+const bgImages = document.querySelectorAll(".bg-img");
+let currentBg = 0;
+
+setInterval(() => {
+  if (bgImages.length === 0) return;
+
+  bgImages[currentBg].classList.remove("active");
+
+  currentBg = (currentBg + 1) % bgImages.length;
+
+  bgImages[currentBg].classList.add("active");
+}, 7000);
