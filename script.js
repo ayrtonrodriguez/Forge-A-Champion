@@ -31,6 +31,7 @@ let rotation = 0;
 let spinning = false;
 
 function spin() {
+  alert("FUNCIONA");
   if (spinning) return;
 
   spinning = true;
@@ -61,3 +62,10 @@ function spin() {
     spinning = false;
   }, 3000);
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("spinBtn");
+
+  button.addEventListener("click", () => {
+    spin();
+  });
+});
