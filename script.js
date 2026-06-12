@@ -21,13 +21,14 @@ const champions = [
 ];
 
 const options = {
-  head: champions,
   body: champions,
-  weapon: champions,
-  theme: champions,
-  nose: champions,
+  head: champions,
   eyes: champions,
-  extra: champions
+  nose: champions,
+  legs: champions,
+  weapon: champions,
+  extra: champions,
+  theme: champions
 };
 
 let rotation = 0;
