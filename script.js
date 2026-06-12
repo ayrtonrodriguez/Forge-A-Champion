@@ -31,7 +31,7 @@ let rotation = 0;
 let spinning = false;
 
 function spin() {
-  alert("FUNCIONA");
+  
   if (spinning) return;
 
   spinning = true;
