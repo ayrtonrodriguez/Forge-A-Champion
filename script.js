@@ -25,7 +25,6 @@ const options = {
   head: champions,
   eyes: champions,
   nose: champions,
-  legs: champions,
   weapon: champions,
   extra: champions,
   theme: champions
