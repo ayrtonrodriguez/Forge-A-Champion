@@ -24,7 +24,10 @@ const options = {
   head: champions,
   body: champions,
   weapon: champions,
-  theme: champions
+  theme: champions,
+  nose: champions,
+  eyes: champions,
+  extra: champions
 };
 
 let rotation = 0;
