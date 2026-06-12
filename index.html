@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&display=swap" rel="stylesheet">
-<html lang="es">
+<html lang="en">
 <head>
-  <link rel="icon" href="favicon.png" sizes="512x512">
   <meta charset="UTF-8" />
-  <title>Random Creature</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champion Fusion</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="cinematic-bg">
-    <div class="fog fog1"></div>
-    <div class="fog fog2"></div>
-    <div class="magic-light"></div>
-    <div class="particles"></div>
-    <div class="vignette"></div>
-</div>
-  <div class="bg"></div>
 
-  <div class="app">
-  <h1>FORGE A CHAMPION</h1>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+  </video>
 
-    <p>The wheel decides their fate</p>
+  <div class="overlay"></div>
+
+  <main class="app">
+    <h1>CHAMPION FUSION</h1>
+    <p>The wheel creates a new League-style champion</p>
 
     <select id="category">
-         <option value="head">Head</option>
-         <option value="body">Body</option>
-        <option value="weapon">Weapon</option>
-        <option value="power">Power</option>
+      <option value="head">HEAD</option>
+      <option value="body">BODY</option>
+      <option value="weapon">WEAPON</option>
+      <option value="theme">THEME</option>
+      <option value="power">POWER</option>
+      <option value="region">REGION</option>
     </select>
 
     <div class="wheel-wrap">
@@ -40,7 +43,16 @@
     <button onclick="spin()">SPIN</button>
 
     <h2 id="result">Press Spin</h2>
-  </div>
+
+    <section class="build">
+      <div><span>HEAD</span><strong id="headResult">????</strong></div>
+      <div><span>BODY</span><strong id="bodyResult">????</strong></div>
+      <div><span>WEAPON</span><strong id="weaponResult">????</strong></div>
+      <div><span>THEME</span><strong id="themeResult">????</strong></div>
+      <div><span>POWER</span><strong id="powerResult">????</strong></div>
+      <div><span>REGION</span><strong id="regionResult">????</strong></div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
