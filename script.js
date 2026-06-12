@@ -31,6 +31,7 @@ let rotation = 0;
 let spinning = false;
 
 function spin() {
+  console.log("spin works");
   if (spinning) return;
 
   spinning = true;
